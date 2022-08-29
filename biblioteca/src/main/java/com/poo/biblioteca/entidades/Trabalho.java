@@ -1,4 +1,4 @@
-package entidades;
+package com.poo.biblioteca.entidades;
 
 import java.io.File;
 import java.util.ArrayList;

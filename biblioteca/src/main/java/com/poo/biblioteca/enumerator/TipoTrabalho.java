@@ -1,4 +1,4 @@
-package enumerator;
+package com.poo.biblioteca.enumerator;
 
 public enum TipoTrabalho {
     ARTIGO_CIENTIFICO("Artigo científico"),

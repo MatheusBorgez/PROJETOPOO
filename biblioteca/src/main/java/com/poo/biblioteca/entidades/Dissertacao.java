@@ -1,8 +1,8 @@
-package entidades;
+package com.poo.biblioteca.entidades;
 
 import java.util.ArrayList;
 
-import enumerator.TipoTrabalho;
+import com.poo.biblioteca.enumerator.TipoTrabalho;
 
 public class Dissertacao extends Trabalho {
 

@@ -1,13 +1,31 @@
-package entidades;
+package com.poo.biblioteca.entidades;
 
 import java.util.ArrayList;
 import java.util.Date;
+import com.poo.biblioteca.enumerator.TipoTrabalho;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-import enumerator.TipoTrabalho;
-
+@Entity
+@Table(name = "artigos_cientificos")
 public class ArtigoCientifico extends Trabalho {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     private Date dataPublicacao;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public ArtigoCientifico(String titulo, ArrayList<Autor> autores, Date dataPublicacao) {
         super(titulo, autores);
