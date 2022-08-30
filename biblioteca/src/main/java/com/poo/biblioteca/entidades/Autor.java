@@ -2,6 +2,7 @@ package com.poo.biblioteca.entidades;
 
 import java.util.Date;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,9 +17,16 @@ public class Autor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "nome")
     private String nome;
+
+    @Column(name = "nacionalidade")
     private String nacionalidade;
+
+    @Column(name = "formacao")
     private String formacao;
+
+    @Column(name = "data_nascimento")
     private Date dataNascimento;
 
     public Autor(String nome, String nacionalidade, String formacao, Date dataNascimento) {

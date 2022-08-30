@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import com.poo.biblioteca.enumerator.TipoTrabalho;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "artigo_cientifico")
 public class ArtigoCientifico extends Trabalho {
 
     private Date dataPublicacao;

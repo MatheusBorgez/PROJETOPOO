@@ -4,8 +4,15 @@ import java.util.ArrayList;
 
 import com.poo.biblioteca.enumerator.TipoTrabalho;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "dissetacao")
 public class Dissertacao extends Trabalho {
 
+    @Column(name = "curso")
     private String curso;
 
     public Dissertacao(String curso, String titulo, ArrayList<Autor> autores) {
