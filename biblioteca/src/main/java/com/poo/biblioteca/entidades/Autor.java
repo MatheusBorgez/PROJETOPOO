@@ -2,7 +2,20 @@ package com.poo.biblioteca.entidades;
 
 import java.util.Date;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "autor")
 public class Autor {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     private String nome;
     private String nacionalidade;
     private String formacao;
@@ -13,6 +26,14 @@ public class Autor {
         this.nacionalidade = nacionalidade;
         this.formacao = formacao;
         this.dataNascimento = dataNascimento;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {

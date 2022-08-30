@@ -9,7 +9,7 @@ public class Dissertacao extends Trabalho {
     private String curso;
 
     public Dissertacao(String curso, String titulo, ArrayList<Autor> autores) {
-        super(titulo, autores);
+        super(titulo, autores,TipoTrabalho.DISSERTACAO);
         this.curso = curso;
     }
 

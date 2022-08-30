@@ -9,7 +9,7 @@ public class Tese extends Trabalho {
     private String areaDeContribuicao;
 
     public Tese(String titulo, ArrayList<Autor> autores, String areaDeContribuicao) {
-        super(titulo, autores);
+        super(titulo, autores, TipoTrabalho.TESE);
         this.areaDeContribuicao = areaDeContribuicao;
     }
 
