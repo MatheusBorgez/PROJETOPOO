@@ -1,0 +1,8 @@
+com\poo\biblioteca\entidades\Trabalho.class
+com\poo\biblioteca\enumerator\TipoTrabalho.class
+com\poo\biblioteca\entidades\Dissertacao.class
+com\poo\biblioteca\App.class
+com\poo\biblioteca\entidades\Tese.class
+com\poo\biblioteca\entidades\Autor.class
+com\poo\biblioteca\entidades\IDocumento.class
+com\poo\biblioteca\entidades\ArtigoCientifico.class
