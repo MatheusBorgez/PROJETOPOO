@@ -15,8 +15,7 @@ public class App {
     private static EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("biblioteca");
     private static EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-    public static void main( String[] args )
-    {
-        Autor cliente = entityManager.find(Autor.class, 1);        
+    public static void main(String[] args) {
+        Autor cliente = entityManager.find(Autor.class, 1);
     }
 }
